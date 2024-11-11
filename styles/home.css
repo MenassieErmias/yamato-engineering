@@ -39,3 +39,26 @@
   text-transform: capitalize;
   text-align: center;
 }
+
+/* welcome section styles */
+
+.welcome {
+  height: 100vh;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  padding: 1rem;
+}
+
+.welcome-container {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
