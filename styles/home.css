@@ -13,11 +13,13 @@
 .hero {
   height: calc(100vh - 70px);
   background-color: var(--primary);
-  border-top: var(--text-primary) 1px solid;
   color: var(--text-primary);
+  padding: 1rem;
 }
 
 .hero-container {
+  border-top: 1px var(--text-primary) solid;
+
   height: inherit;
   display: flex;
   flex-direction: column;
@@ -56,9 +58,63 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-top: 1px var(--text-primary) solid;
+
 }
 
 .welcome-heading {
   font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Specialization styles */
+
+.specialization {
+  min-height: 100vh;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  padding: 1rem;
+}
+
+.specialization-container {
+  border-top: 1px var(--text-primary) solid;
+  padding-top: 2rem;
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialization-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* specialization cards style */
+.card {
+  width: 250px;
+  height: 400px;
+  margin-bottom: 2rem;
+  border: 2px solid var(--text-secondary);
+  border-radius: 20px;
+  background-color: var(--secondary);
+  color: var(--text-teritiary);
+}
+
+.card-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
   margin-bottom: 2rem;
 }
