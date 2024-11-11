@@ -45,7 +45,9 @@ const Nav = () => {
             toggleNav && (
 
               <ul className="mobile-nav-ul">
-                <li className="mobile-nav-item">
+                <li
+                  onClick={() => setToggleNav(false)}
+                  className="mobile-nav-item">
                   <Link
                     className="mobile-nav-link"
                     href={'/'}
@@ -53,7 +55,9 @@ const Nav = () => {
                     Home
                   </Link>
                 </li>
-                <li className="mobile-nav-item">
+                <li
+                  onClick={() => setToggleNav(false)}
+                  className="mobile-nav-item">
                   <Link
                     className="mobile-nav-link"
                     href={'/services'}
@@ -61,7 +65,9 @@ const Nav = () => {
                     Services
                   </Link>
                 </li>
-                <li className="mobile-nav-item">
+                <li
+                  onClick={() => setToggleNav(false)}
+                  className="mobile-nav-item">
                   <Link
                     className="mobile-nav-link"
                     href={'/about-us'}
@@ -69,7 +75,9 @@ const Nav = () => {
                     About Us
                   </Link>
                 </li>
-                <li className="mobile-nav-item">
+                <li
+                  onClick={() => setToggleNav(false)}
+                  className="mobile-nav-item">
                   <Link
                     className="mobile-nav-link"
                     href={'/contact-us'}
