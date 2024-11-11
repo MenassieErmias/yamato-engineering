@@ -3,7 +3,10 @@ import { useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
+
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoMdClose } from "react-icons/io";
+
 import '@styles/navbar.css';
 
 
@@ -29,10 +32,55 @@ const Nav = () => {
         <div className="navbar-nav">
 
           <button
-            onClick={() => setToggleNav((toggleNav => !toggleNav))}
+            onClick={() => setToggleNav(toggleNav => !toggleNav)}
             className="mobile-nav-toggle-btn">
-            <RxHamburgerMenu className='hamburger-menu-icon' />
+            {
+              toggleNav ?
+                <IoMdClose />
+                :
+                <RxHamburgerMenu className='hamburger-menu-icon' />}
           </button>
+
+          {
+            toggleNav && (
+
+              <ul className="mobile-nav-ul">
+                <li className="mobile-nav-item">
+                  <Link
+                    className="mobile-nav-link"
+                    href={'/'}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="mobile-nav-item">
+                  <Link
+                    className="mobile-nav-link"
+                    href={'/services'}
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li className="mobile-nav-item">
+                  <Link
+                    className="mobile-nav-link"
+                    href={'/about-us'}
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li className="mobile-nav-item">
+                  <Link
+                    className="mobile-nav-link"
+                    href={'/contact-us'}
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+
+            )
+          }
 
           <ul className="navbar-ul">
             <li className="nav-item">
