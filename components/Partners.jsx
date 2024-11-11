@@ -6,16 +6,16 @@ import Link from "next/link";
 const Partners = () => {
   const PartnerCard = ({ imageURL, name, URL }) => {
     return (
-      <div className="card">
-        <div className="card-container">
+      <div className="partner-card">
+        <div className="partner-card-container">
           <Image
             src={imageURL}
             alt={name}
             height={100}
             width={100}
-            className="card-image"
+            className="parter-card-image"
           />
-          <h3 className="card-name">
+          <h3 className="partner-card-name">
             {name}
           </h3>
           <Link href={URL}>Learn more</Link>
@@ -38,11 +38,11 @@ const Partners = () => {
   ]
 
   return (
-    <section className="partner">
-      <partners className="heading">
+    <section className="partners">
+      <h1 className="partners-heading">
         Here are some of the people we worked with.
-      </partners>
-      <div className="partner-container">
+      </h1>
+      <div className="partners-container">
         {
           partnerData.map((partner, index) => (
             <PartnerCard key={index} name={partner.name} imageURL={partner.imageURL} URL={partner.URL} />

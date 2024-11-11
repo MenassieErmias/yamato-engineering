@@ -138,3 +138,20 @@
   text-decoration: underline;
   margin-bottom: 2rem;
 }
+
+/* partners */
+
+.partners {
+  height: 100vh;
+  background-color: var(--primary);
+  color: var(--text-primary);
+}
+
+.partners-container {
+  display: flex;
+
+}
+
+/* partner card styles */
+
+.partner-card {}
