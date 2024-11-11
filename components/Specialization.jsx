@@ -22,10 +22,12 @@ const Specialization = () => {
 
   return (
     <section className="specialization">
+      <hr />
+      <h2 className="specialization-heading">
+        We specialize in
+      </h2>
       <div className="specialization-container">
-        <h2 className="specialization-heading">
-          We specialize in
-        </h2>
+
         {
           specsData.map((spec, index) => (
             <SpecCard key={index} name={spec.name} imageURL={spec.imageURL} desc={spec.desc} />
