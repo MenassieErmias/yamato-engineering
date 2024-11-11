@@ -33,10 +33,6 @@
     display: none;
   }
 
-  .hamburger-menu-icon {
-    display: none;
-  }
-
   .navbar-nav {
     display: flex;
     align-items: center;

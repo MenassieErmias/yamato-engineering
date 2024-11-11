@@ -1,4 +1,6 @@
 'use client';
+import { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -6,6 +8,9 @@ import '@styles/navbar.css';
 
 
 const Nav = () => {
+
+  const [toggleNav, setToggleNav] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -22,7 +27,10 @@ const Nav = () => {
           </h1>
         </div>
         <div className="navbar-nav">
-          <button className="mobile-nav-toggle- btn">
+
+          <button
+            onClick={() => setToggleNav((toggleNav => !toggleNav))}
+            className="mobile-nav-toggle-btn">
             <RxHamburgerMenu className='hamburger-menu-icon' />
           </button>
 
