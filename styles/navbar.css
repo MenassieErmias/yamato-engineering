@@ -26,3 +26,39 @@
 .navbar-ul {
   display: none;
 }
+
+
+@media (min-width: 720px) {
+  .mobile-nav-toggle-btn {
+    display: none;
+  }
+
+  .hamburger-menu-icon {
+    display: none;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-item {
+    padding: 0.5rem;
+    background-color: antiquewhite;
+  }
+
+  .nav-item:hover {
+    background-color: #f1f1f1;
+  }
+
+  .nav-link {
+    height: inherit;
+    width: inherit;
+  }
+}

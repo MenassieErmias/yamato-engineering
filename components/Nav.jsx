@@ -23,7 +23,7 @@ const Nav = () => {
         </div>
         <div className="navbar-nav">
           <button className="mobile-nav-toggle- btn">
-            <RxHamburgerMenu classnName='hamburger-menu-icon' />
+            <RxHamburgerMenu className='hamburger-menu-icon' />
           </button>
 
           <ul className="navbar-ul">
