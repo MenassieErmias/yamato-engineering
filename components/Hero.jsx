@@ -1,8 +1,17 @@
-
+import '@styles/home.css'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <section className="hero">
+      <div className="hero-container">
+        <h1 className="hero-heading">
+          Empower the future of water.
+        </h1>
+        <p className='hero-desc'>
+          Innovative Control Boards, Solar Systems and SCADA Solutions
+        </p>
+      </div>
+    </section>
   )
 }
 

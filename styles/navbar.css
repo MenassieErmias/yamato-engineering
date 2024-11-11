@@ -48,7 +48,7 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.5rem;
-  height: 100vh;
+  height: calc(100vh - 70px);
   background-color: var(--primary);
   color: var(--text-secondary);
   padding: 1rem;

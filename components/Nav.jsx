@@ -22,7 +22,7 @@ const Nav = () => {
             className="navbar-logo"
             height={50}
             width={50}
-            src='/assets/images/logo.jpg'
+            src='/assets/images/alpha.png'
             alt='logo'
           />
           <h1 className="navbar-heading">

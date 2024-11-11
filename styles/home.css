@@ -1,0 +1,41 @@
+/* -----------variables--------- */
+:root {
+  --primary: #010B13;
+  --secondary: #32174D;
+  --teritiary: #483C32;
+  --text-primary: #E5E4E2;
+  --text-secondary: #708090;
+  --text-teritiary: #F5F5F5;
+}
+
+/* hero styles */
+
+.hero {
+  height: calc(100vh - 70px);
+  background-color: var(--primary);
+  border-top: var(--text-primary) 1px solid;
+  color: var(--text-primary);
+}
+
+.hero-container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-desc {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
