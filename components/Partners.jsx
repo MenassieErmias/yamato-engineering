@@ -13,12 +13,12 @@ const Partners = () => {
             alt={name}
             height={100}
             width={100}
-            className="parter-card-image"
+            className="partner-card-image"
           />
           <h3 className="partner-card-name">
             {name}
           </h3>
-          <Link href={URL}>Learn more</Link>
+          <Link class='partner-card-btn' href={URL}>Learn more</Link>
         </div>
       </div>
     )
@@ -32,13 +32,14 @@ const Partners = () => {
     },
     {
       name: 'KDH Engineering',
-      imageURL: '/assets/images/kdh-engineering-logo.png',
+      imageURL: '/assets/images/kdh-engineering-logo.jpg',
       URL: 'https://www.extreme-endeavors.com/'
     },
   ]
 
   return (
     <section className="partners">
+      <hr />
       <h1 className="partners-heading">
         Here are some of the people we worked with.
       </h1>
