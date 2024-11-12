@@ -27,12 +27,12 @@ const Partners = () => {
   const partnerData = [
     {
       name: 'Extreme Endeavors',
-      imageURL: '/assets/images/extereme-endeavors.jpg',
+      imageURL: '/assets/images/extreme-endeavors-logo.png',
       URL: 'https://www.extreme-endeavors.com/'
     },
     {
       name: 'KDH Engineering',
-      imageURL: '/assets/images/kdh-engineering.png',
+      imageURL: '/assets/images/kdh-engineering-logo.png',
       URL: 'https://www.extreme-endeavors.com/'
     },
   ]
