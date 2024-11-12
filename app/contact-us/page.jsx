@@ -1,9 +1,12 @@
 import ContactUs from "@components/ContactUs";
-import '@styles/home.css'
+import '@styles/home.css';
+import '@styles/contact-us.css';
 
 const page = () => {
   return (
-    <ContactUs />
+    <main className="contact-us-page">
+      <ContactUs />
+    </main>
   )
 }
 
