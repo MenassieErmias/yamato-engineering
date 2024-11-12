@@ -1,7 +1,17 @@
+import Form from 'next/form'
 
 const ContactUs = () => {
   return (
-    <div>ContactUs</div>
+    <section className="contact-us">
+      <div className="contact-us container">
+        <Form className="contact-us-form">
+          <input className='contact-form-input' name="Name" />
+          <button type="submit">
+            Send Message
+          </button>
+        </Form>
+      </div>
+    </section>
   )
 }
 
