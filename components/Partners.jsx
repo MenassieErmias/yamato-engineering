@@ -18,7 +18,7 @@ const Partners = () => {
           <h3 className="partner-card-name">
             {name}
           </h3>
-          <Link class='partner-card-btn' href={URL}>Learn more</Link>
+          <Link className='partner-card-btn' href={URL}>Learn more</Link>
         </div>
       </div>
     )
