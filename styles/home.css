@@ -227,3 +227,71 @@
 .partner-card-btn:hover {
   background-color: var(--secondary);
 }
+
+/* -------clients styles--------- */
+
+.clients {
+  height: 100vh;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  padding: 1rem;
+}
+
+.clients-heading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 720px) {
+  .clients {
+    height: max-content;
+  }
+
+  .clients-heading {
+    margin: 4rem 1.5rem;
+  }
+
+  .clients-container {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+}
+
+/* client cards styles */
+
+.client-card {
+  height: 150px;
+  width: 150px;
+  border: solid var(--text-primary) 1px;
+  padding: 0.5rem;
+}
+
+.client-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-card-heading {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.client-card-btn {
+  transition: 1s ease-in-out;
+}
+
+.client-card-btn:hover {
+  transform: scale(1.1);
+}
