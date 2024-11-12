@@ -2,7 +2,9 @@
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <main className="services">
+      Services
+    </main>
   )
 }
 
