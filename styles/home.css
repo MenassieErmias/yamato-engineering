@@ -166,6 +166,25 @@
   align-items: center;
 }
 
+@media (min-width: 720px) {
+  .partners {
+    height: max-content;
+  }
+
+  .partners-heading {
+    margin: 4rem 1.5rem;
+  }
+
+  .partners-container {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+
+  }
+}
+
 /* partner card styles */
 
 .partner-card {
