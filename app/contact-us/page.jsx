@@ -4,9 +4,9 @@ import '@styles/contact-us.css';
 
 const page = () => {
   return (
-    <main className="contact-us-page">
+    <section className="contact-us-page">
       <ContactUs />
-    </main>
+    </section>
   )
 }
 
