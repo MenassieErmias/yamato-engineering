@@ -35,9 +35,13 @@
 .service-card{
   height:470px;
   width: 400px;
-  border: var(--text-primary) 1px solid;
   margin-bottom: 2rem;
   padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.service-card:hover{
+  transform: scale(1.01);
 }
 
 .service-card-container{
@@ -48,6 +52,7 @@
   height: 250px;
   object-fit: cover;
   margin-bottom: 0.5rem;
+  border: var(--text-primary) 1px solid;
 }
 
 .service-card-title {
@@ -63,3 +68,13 @@
   text-align: center;
 }
 
+@media(min-width: 720px) {
+  .services-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .service-card{
+    margin-left: 2rem;
+  }
+}

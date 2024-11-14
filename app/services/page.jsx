@@ -53,10 +53,11 @@ const Services = () => {
   return (
     <section className="services">
       <hr />
+      <h2 className="services-heading">
+        Why choose Yamato engineering?<br /> We offer,
+      </h2>
       <div className="services-container">
-        <h2 className="services-heading">
-          Why choose Yamato engineering?<br /> We offer,
-        </h2>
+
         {
           services.map((service, index) => (
             <ServicesCard key={index} imageURL={service.imageURL} title={service.title} desc={service.desc} />
