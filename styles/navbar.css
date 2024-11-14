@@ -47,8 +47,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 0.5rem;
-  height: calc(100vh - 70px);
+  padding: 1rem 0.5rem;
+  height: max-content;
   background-color: var(--primary);
   color: var(--text-secondary);
   padding: 1rem;
@@ -58,10 +58,13 @@
 .mobile-nav-item {
   display: grid;
   place-content: center;
+  transition: 0.5s ease-in-out;
 }
 
 .mobile-nav-item:hover {
-  background-color: var(--secondary);
+  background-color: var(--teritiary);
+  color:var(--text-teritiary);
+  border-radius: 10px;
 }
 
 .mobile-nav-link {

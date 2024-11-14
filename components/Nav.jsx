@@ -55,6 +55,7 @@ const Nav = () => {
                     Home
                   </Link>
                 </li>
+                <hr />
                 <li
                   onClick={() => setToggleNav(false)}
                   className="mobile-nav-item">
@@ -65,6 +66,7 @@ const Nav = () => {
                     Services
                   </Link>
                 </li>
+                <hr />
                 <li
                   onClick={() => setToggleNav(false)}
                   className="mobile-nav-item">
@@ -75,6 +77,7 @@ const Nav = () => {
                     About Us
                   </Link>
                 </li>
+                <hr />
                 <li
                   onClick={() => setToggleNav(false)}
                   className="mobile-nav-item">
@@ -85,6 +88,7 @@ const Nav = () => {
                     Contact Us
                   </Link>
                 </li>
+                <hr />
               </ul>
 
             )
