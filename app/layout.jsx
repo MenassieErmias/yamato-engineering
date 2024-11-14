@@ -1,6 +1,9 @@
 import '@styles/globals.css';
+import '@styles/footer.css'
+
 import Nav from '@components/Nav';
 import Footer from '@components/Footer';
+
 
 export const metadata = {
   title: 'yamato engineerng',

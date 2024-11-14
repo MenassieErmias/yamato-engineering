@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import '@styles/services.css'
 const Services = () => {
 
   const services = [
@@ -36,9 +37,11 @@ const Services = () => {
             height={200}
             width={100}
           />
-          <h4 className="sercice-card-title">
+          <hr />
+          <h4 className="service-card-title">
             {title}
           </h4>
+          <hr />
           <p className="service-card-desc">
             {desc}
           </p>
@@ -49,13 +52,14 @@ const Services = () => {
 
   return (
     <section className="services">
+      <hr />
       <div className="services-container">
         <h2 className="services-heading">
-          WHY CHOOSE YAMATO ENGINEERING PLC?<br /> We offer,
+          Why choose Yamato engineering?<br /> We offer,
         </h2>
         {
           services.map((service, index) => (
-            <ServicesCard key={index} imageURL={service.imageURL} title={service.title} desc={services.desc} />
+            <ServicesCard key={index} imageURL={service.imageURL} title={service.title} desc={service.desc} />
           ))
         }
       </div>
